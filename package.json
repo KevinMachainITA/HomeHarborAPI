@@ -1,0 +1,25 @@
+{
+  "name": "homeharbor_api",
+  "version": "1.0.0",
+  "description": "HomeHarbor's API Node, Express and MonogoDB",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "MongoDB",
+    "Rest",
+    "API"
+  ],
+  "author": "Kevin Giovanni García Machain and Hugo Adán Pérez García",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

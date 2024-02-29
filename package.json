@@ -17,7 +17,8 @@
   "author": "Kevin Giovanni García Machain and Hugo Adán Pérez García",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mongoose": "^8.2.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"

@@ -1,15 +1,13 @@
 import express from 'express';
+import UserController from '../controllers/UserController.js';
 
 const router = express.Router();
 
 export default function () {
-    router.get('/', (req, res) =>{
-        res.send('from init');
-    });
-
-    router.get('/users', (req, res) => {
-        res.send('from users');
-    });
+    
+    //Routes to users
+    router.get('/users', UserController.index);
+    router.post('/users', UserController.store);
 
     return router;
 }

@@ -16,7 +16,7 @@ UserController.store = async (req, res, next) => {
 
 UserController.index = async (req, res, next) => {
     try {
-        const users = await User.find({});
+        const users = await User.find({}).populate('properties');
         res.json({users});
     } catch (error) {
         console.log(error)

@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-const UserSchema = new Schema({
+const userSchema = new Schema({
     name: {
         type: String,
         trim: true
@@ -17,11 +17,15 @@ const UserSchema = new Schema({
         lowercase: true,
         trim: true
     },
+    properties: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Property'
+    }]
     /*password: {
 
     }*/
 });
 
-const User = mongoose.model("User", UserSchema); // Creating a model with the schema
+const User = mongoose.model("User", userSchema); // Creating a model with the schema
 
 export default User;

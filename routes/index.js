@@ -1,5 +1,6 @@
 import express from 'express';
 import UserController from '../controllers/UserController.js';
+import PropertyController from '../controllers/PropertyController.js';
 
 const router = express.Router();
 
@@ -11,6 +12,9 @@ export default function () {
     router.get('/users/:idUser', UserController.show);
     router.put('/users/:idUser', UserController.update);
     router.delete('/users/:idUser', UserController.delete);
+
+    //Routes to properties
+    router.post('/properties', PropertyController.store);
 
     return router;
 }
